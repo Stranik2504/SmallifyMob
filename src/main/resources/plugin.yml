@@ -1,0 +1,23 @@
+name: SmallifyMob
+version: '1.0'
+main: stranik.dev.smallifyMob.SmallifyMob
+api-version: '1.21'
+
+commands: 
+  smallify:
+    permission: smallify.commands
+    aliases: [ "smal" ]
+
+permissions:
+  smallify.useNametag:
+    default: not op
+    description: Permission to use nametag on entity for stop growing
+      
+  smallify.commands:
+    default: not op
+    description: Permission to use commands
+  
+  smallify:
+    children:
+      - smallifyEventHandler.useNametag
+      - smallifyEventHandler.commands
