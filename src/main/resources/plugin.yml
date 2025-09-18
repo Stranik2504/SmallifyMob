@@ -1,7 +1,7 @@
 name: SmallifyMob
 version: '1.0'
 main: stranik.dev.smallifyMob.SmallifyMob
-api-version: '1.21'
+api-version: '${minecraft.version}'
 
 commands: 
   smallify:
